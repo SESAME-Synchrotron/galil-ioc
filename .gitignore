@@ -1,0 +1,7 @@
+db/
+dbd/
+bin/
+O.*/
+*.dmc
+dmc/
+envPaths
