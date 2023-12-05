@@ -10,9 +10,11 @@ FROM    registry.docker.com/alpine
 RUN     mkdir /ioc
 WORKDIR /ioc
 
-COPY --from=modules /ioc/dbd/   /ioc/dbd
-COPY --from=modules /ioc/bin/   /ioc/bin
-COPY --from=modules /ioc/st.cmd /ioc/
+COPY --from=modules /ioc/db/      /ioc/db
+COPY --from=modules /ioc/dbd/     /ioc/dbd
+COPY --from=modules /ioc/bin/     /ioc/bin
+COPY --from=modules /ioc/autosave /ioc/autosave
+COPY --from=modules /ioc/*.cmd    /ioc/
 
 # EPICS Base core libraries.
 COPY --from=modules /opt/epics/base/lib/linux-x86_64/libdbRecStd.so.3.15 /opt/epics/base/lib/linux-x86_64/

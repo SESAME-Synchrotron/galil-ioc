@@ -33,7 +33,7 @@
 # DEFAULT_HOMETYPE = 0 Normally open, 1 Normally closed
 # PREC - precision
 
-file "$(GALIL)/db/galil_dmc_ctrl.template"
+file "$(TOP)/db/galil_dmc_ctrl.template"
 {
 pattern
 {   P,	      PORT,    SCAN, 	   DEFAULT_HOMETYPE, DEFAULT_LIMITTYPE, PREC}

@@ -11,7 +11,7 @@ set_requestfile_path("${MOTOR}/op/burt", "")
 set_requestfile_path("${SSCAN}/db", "")
 set_requestfile_path("$(TOP)/autosave", "")
 
-dbLoadRecords("$(AUTOSAVE)/db/save_restoreStatus.db","P=$(P)")
+dbLoadRecords("$(TOP)/db/save_restoreStatus.db","P=$(P)")
 
 save_restoreSet_CAReconnect(1)
 

@@ -32,7 +32,7 @@
 # SCAN - Scan period for monitor records.  Use passive when only epics will change value (default)
 #      - Periodic scan will slow controller update performance (poller)
 
-file "$(GALIL)/db/galil_csmotor_extras.template"
+file "$(TOP)/db/galil_csmotor_extras.template"
 {
 pattern
 {   P,        M,    PORT,    ADDR, PREC, SCAN,      EGU  }

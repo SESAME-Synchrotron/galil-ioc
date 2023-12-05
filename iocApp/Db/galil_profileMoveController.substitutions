@@ -27,7 +27,7 @@
 # NAXES – Number of axes in the profile
 # NPOINTS – Number of profile points
 #
-file "$(MOTOR)/db/profileMoveController.template"
+file "$(TOP)/db/profileMoveController.template"
 {
 pattern
 {P,       R,      PORT,   NAXES, NPOINTS, NPULSES,  TIMEOUT}
@@ -40,7 +40,7 @@ pattern
 # R    - Record Name
 # PORT - Asyn port name
 
-file "$(GALIL)/db/galil_profileMoveController.template"
+file "$(TOP)/db/galil_profileMoveController.template"
 {
 pattern
 {P,       R,      PORT,   TIMEOUT}

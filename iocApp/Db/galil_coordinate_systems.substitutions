@@ -27,7 +27,7 @@
 # ADDR - Hardware port to read
 # SCAN - Scan period for monitor records
 
-file "$(GALIL)/db/galil_coordinate_system.template"
+file "$(TOP)/db/galil_coordinate_system.template"
 { 
 pattern { P,           R,    PORT,    ADDR,  SCAN         }
 

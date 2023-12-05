@@ -30,7 +30,7 @@
 # ADDR - Asyn address
 # NELM - Number of elements
 
-file "$(GALIL)/db/galil_user_array.template"
+file "$(TOP)/db/galil_user_array.template"
 {
 pattern
 {   P,	      PORT,    ADDR,  NELM } 
