@@ -1,6 +1,6 @@
 #!/ioc/bin/linux-x86_64/ioc
 
-< ./env.cmd
+< /ioc/env.cmd
 
 epicsEnvSet("IP",  "192.168.2.5")
 epicsEnvSet("P",   "DMC:")
@@ -14,5 +14,5 @@ epicsEnvSet("M6",  "F3")
 epicsEnvSet("M7",  "G7")
 epicsEnvSet("M8",  "XX")
 
-< ./init.cmd
+< /ioc/init.cmd
 

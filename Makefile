@@ -29,3 +29,12 @@ iocBoot_DEPEND_DIRS += $(filter %App,$(DIRS))
 # Add any additional dependency rules here:
 
 include $(TOP)/configure/RULES_TOP
+
+HOST = registry.docker.com
+NAME = galil-ioc
+
+docker:
+	docker build -t $(HOST)/$(NAME) .
+
+push: docker
+	docker push $(HOST)/$(NAME)
