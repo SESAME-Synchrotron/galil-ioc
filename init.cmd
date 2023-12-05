@@ -3,8 +3,8 @@ dbLoadRecords("$(SSCAN)/db/standardScans.db", "P=$(P),MAXPTS1=8000,MAXPTS2=1000,
 dbLoadRecords("$(SSCAN)/db/saveData.db",      "P=$(P)")
 dbLoadRecords("$(MOTOR)/db/motorUtil.db",     "P=$(DMC)")
 
-< ./galil.cmd
-< ./autosave.cmd
+< /ioc/galil.cmd
+< /ioc/autosave.cmd
 
 iocInit
 
