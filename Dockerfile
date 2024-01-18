@@ -10,11 +10,11 @@ FROM    registry.docker.com/alpine
 RUN     mkdir /ioc
 WORKDIR /ioc
 
-COPY --from=modules /ioc/db/      /ioc/db
-COPY --from=modules /ioc/dbd/     /ioc/dbd
-COPY --from=modules /ioc/bin/     /ioc/bin
-COPY --from=modules /ioc/autosave /ioc/autosave
-COPY --from=modules /ioc/*.cmd    /ioc/
+COPY --from=modules /ioc/db/       /ioc/db
+COPY --from=modules /ioc/dbd/      /ioc/dbd
+COPY --from=modules /ioc/bin/      /ioc/bin
+COPY --from=modules /ioc/autosave  /ioc/autosave
+COPY --from=modules /ioc/cmd/*.cmd /ioc/
 
 # Databases and request files from various modules.
 COPY --from=modules /opt/epics/support/motor/db/    /opt/epics/support/motor/db
