@@ -44,7 +44,7 @@
 #        use Periodic scan when external will change value.
 # PINI = YES will push autosave or default value to controller at startup
 
-file "$(TOP)/db/galil_userdef_records.template"
+file "$(GALIL)/db/galil_userdef_records.template"
 {
 
 pattern

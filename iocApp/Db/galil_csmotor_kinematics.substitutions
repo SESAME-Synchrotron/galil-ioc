@@ -31,7 +31,7 @@
 # PORT - Asyn port name
 # ADDR - CS Motor I-P (8-15)
 
-file "$(TOP)/db/galil_forward_transform.template"
+file "$(GALIL)/db/galil_forward_transform.template"
 {
    pattern { P,            M,    PORT,    ADDR }
 # CS motors (forward transforms)
@@ -58,7 +58,7 @@ file "$(TOP)/db/galil_forward_transform.template"
 # PORT - Asyn port name
 # ADDR - CS Motor I-P (8-15)
 
-file "$(TOP)/db/galil_reverse_transforms.template"
+file "$(GALIL)/db/galil_reverse_transforms.template"
 {
    pattern { P,            M,    PORT,    ADDR }
 # CS motors (reverse transforms)

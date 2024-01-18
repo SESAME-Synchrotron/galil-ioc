@@ -25,7 +25,7 @@
 # 800 Blackburn Road, Clayton, Victoria 3168, Australia.
 #
 
-file "$(TOP)/db/galil_motor-v6-10up.template"
+file "$(GALIL)/db/galil_motor-v6-10up.template"
 {
 pattern
 # Real motors

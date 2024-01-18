@@ -29,7 +29,7 @@
 # Digital IO naming
 # $(P)$(R)<Byte or word num><Type Bo or Bi><Bit>
 
-file "$(TOP)/db/galil_digital_in_bit.template"
+file "$(GALIL)/db/galil_digital_in_bit.template"
 {
 pattern {P,       R,          PORT,  BYTE,  MASK,     ZNAM,  ONAM,  ZSV,        OSV         }
 
@@ -98,7 +98,7 @@ pattern {P,       R,          PORT,  BYTE,  MASK,     ZNAM,  ONAM,  ZSV,        
 # WORD - Hardware word to read
 # MASK - Mask for this bit
 
-file "$(TOP)/db/galil_digital_out_bit.template"
+file "$(GALIL)/db/galil_digital_out_bit.template"
 {
 pattern {P,       R,           PORT,  WORD,  MASK,     ZNAM,  ONAM,  ZSV,        OSV         }
 

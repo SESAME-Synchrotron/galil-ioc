@@ -28,7 +28,7 @@
 # P    - PV prefix
 # PORT - Asyn port name
 
-file "$(TOP)/db/galil_rio_ctrl.template"
+file "$(GALIL)/db/galil_rio_ctrl.template"
 {
 pattern
 {   P,	      PORT,   PREC   }

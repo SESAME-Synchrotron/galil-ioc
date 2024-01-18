@@ -1,7 +1,7 @@
 
-dbLoadRecords("$(TOP)/db/standardScans.db", "P=$(P),MAXPTS1=8000,MAXPTS2=1000,MAXPTS3=10,MAXPTS4=10,MAXPTSH=8000")
-dbLoadRecords("$(TOP)/db/saveData.db",      "P=$(P)")
-dbLoadRecords("$(TOP)/db/motorUtil.db",     "P=$(DMC)")
+dbLoadRecords("$(SSCAN)/db/standardScans.db", "P=$(P),MAXPTS1=8000,MAXPTS2=1000,MAXPTS3=10,MAXPTS4=10,MAXPTSH=8000")
+dbLoadRecords("$(SSCAN)/db/saveData.db",      "P=$(P)")
+dbLoadRecords("$(MOTOR)/db/motorUtil.db",     "P=$(DMC)")
 
 < /ioc/galil.cmd
 < /ioc/autosave.cmd

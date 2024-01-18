@@ -7,11 +7,11 @@ save_restoreSet_NumSeqFiles(1)
 save_restoreSet_SeqPeriodInSeconds(300)
 set_savefile_path("/autosave", "")
 
-set_requestfile_path("${MOTOR}/op/burt", "")
-set_requestfile_path("${SSCAN}/db", "")
+set_requestfile_path("${MOTOR}/db/", "")
+set_requestfile_path("${SSCAN}/db/", "")
 set_requestfile_path("$(TOP)/autosave", "")
 
-dbLoadRecords("$(TOP)/db/save_restoreStatus.db","P=$(P)")
+dbLoadRecords("$(AUTOSAVE)/db/save_restoreStatus.db","P=$(P)")
 
 save_restoreSet_CAReconnect(1)
 

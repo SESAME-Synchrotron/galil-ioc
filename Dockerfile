@@ -16,6 +16,12 @@ COPY --from=modules /ioc/bin/     /ioc/bin
 COPY --from=modules /ioc/autosave /ioc/autosave
 COPY --from=modules /ioc/*.cmd    /ioc/
 
+# Databases and request files from various modules.
+COPY --from=modules /opt/epics/support/motor/db/    /opt/epics/support/motor/db
+COPY --from=modules /opt/epics/support/galil/db/    /opt/epics/support/galil/db
+COPY --from=modules /opt/epics/support/sscan/db/    /opt/epics/support/sscan/db
+COPY --from=modules /opt/epics/support/autosave/db/ /opt/epics/support/autosave/db
+
 # EPICS Base core libraries.
 COPY --from=modules /opt/epics/base/lib/linux-x86_64/libdbRecStd.so.3.15 /opt/epics/base/lib/linux-x86_64/
 COPY --from=modules /opt/epics/base/lib/linux-x86_64/libdbCore.so.3.15   /opt/epics/base/lib/linux-x86_64/

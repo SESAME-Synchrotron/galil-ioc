@@ -25,7 +25,7 @@
 # ADDR - Hardware port to read
 # PREC - Precision
 
-file "$(TOP)/db/galil_analog_in.template"
+file "$(GALIL)/db/galil_analog_in.template"
 { 
    pattern { P,           R,           PORT,    ADDR,  SCAN,       PREC }
 
@@ -51,7 +51,7 @@ file "$(TOP)/db/galil_analog_in.template"
 #	   { "RIO01:",    "GalilAi7",  "RIO",   "7",   "I/O Intr", "3"  }
 }
 
-file "$(TOP)/db/galil_analog_out.template"
+file "$(GALIL)/db/galil_analog_out.template"
 { 
    pattern { P,           R,           PORT,    ADDR,  PREC,  LOPR,  HOPR }
 

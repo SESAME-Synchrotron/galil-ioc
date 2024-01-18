@@ -40,7 +40,7 @@
 #		5 - Reverse low active stepper
 # MTRON - motor off 0, motor on 1
 
-file "$(TOP)/db/galil_motor_extras.template"
+file "$(GALIL)/db/galil_motor_extras.template"
 {
 pattern
 { P,        M,        PORT,   ADDR, PREC, SCAN,       MTRTYPE, MTRON, EGU  }
